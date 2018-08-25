@@ -1,0 +1,33 @@
+package com.model.jobs;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.List;
+
+import com.model.demo.ConnectionProvider;
+
+public class JobsDAO {
+
+	public static boolean insert(Jobs j){
+		try{
+			Connection c=ConnectionProvider.getConnection();
+			PreparedStatement p=c.prepareStatement
+					("insert into jobs values(?,?,?,?)");
+			p.setString(1, j.getJob_id());
+			p.setString(2, j.getJob_title());
+			p.setInt(3, j.getMin_salary());
+			p.setInt(4, j.getMax_salary());
+			p.executeUpdate();
+			return true;
+		}
+		catch(SQLException e){
+			e.printStackTrace();
+			return false;
+		}
+	}
+	
+	public List<Jobs> getJobs(){
+		
+	}
+}

@@ -1,0 +1,10 @@
+package com.model.jobs;
+
+public class JobsMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
