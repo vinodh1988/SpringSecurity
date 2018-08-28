@@ -1,0 +1,31 @@
+package com.model;
+
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+import org.hibernate.service.ServiceRegistry;
+import org.hibernate.service.ServiceRegistryBuilder;
+
+
+public class SessionProvider {
+	
+	public SessionFactory getSessionFactory(){
+		ServiceRegistry serviceRegistry;
+		SessionFactory sessionFactory;
+		try {
+
+			Configuration configuration = new Configuration();
+			configuration.configure();
+			serviceRegistry = new ServiceRegistryBuilder().applySettings(
+					configuration.getProperties()).buildServiceRegistry();
+			sessionFactory = configuration.buildSessionFactory(serviceRegistry);
+
+		} catch (Throwable th) {
+
+			System.err.println("Enitial SessionFactory creation failed" + th);
+
+			throw new ExceptionInInitializerError(th);
+
+		}
+	}
+
+}
