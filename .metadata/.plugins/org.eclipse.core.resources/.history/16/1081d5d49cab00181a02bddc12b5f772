@@ -1,0 +1,13 @@
+package com.runner;
+
+import com.relations.model.Dept;
+import com.relations.model.Employee;
+
+public class Runner2 {
+  public static void main(String[] args) {
+	
+	  Dept d=new Dept(1,"Marketing");
+	  Employee e1=new Employee(1,"Vijay","Chennai","Manager");
+	  Employee e2=new Employee(2,"Rajan","Nagpur","Clerk");
+  }
+}

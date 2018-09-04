@@ -1,0 +1,59 @@
+package com.relations.model;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="employee")
+public class Employee {
+@Id
+private	Integer eno;
+@Column
+private String name;
+@Column
+private String city;
+@Column
+private String desig;
+public Integer getEno() {
+	return eno;
+}
+public void setEno(Integer eno) {
+	this.eno = eno;
+}
+public String getName() {
+	return name;
+}
+public void setName(String name) {
+	this.name = name;
+}
+public String getCity() {
+	return city;
+}
+public void setCity(String city) {
+	this.city = city;
+}
+public String getDesig() {
+	return desig;
+}
+public void setDesig(String desig) {
+	this.desig = desig;
+}
+
+
+public Employee(Integer eno, String name, String city, String desig) {
+	super();
+	this.eno = eno;
+	this.name = name;
+	this.city = city;
+	this.desig = desig;
+}
+public Employee() {
+	super();
+	// TODO Auto-generated constructor stub
+}
+
+
+
+}
