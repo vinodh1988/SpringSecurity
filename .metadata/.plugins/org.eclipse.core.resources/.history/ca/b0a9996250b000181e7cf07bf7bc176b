@@ -1,0 +1,5 @@
+package com.relations.model;
+
+public class Course {
+
+}

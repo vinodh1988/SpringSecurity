@@ -6,6 +6,7 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 
@@ -31,6 +32,17 @@ private String desig;
 @ManyToOne(cascade=CascadeType.ALL)
 @JoinColumn(name="dept_id",nullable=false)
 Dept dept;
+
+@OneToOne(mappedBy="employee",cascade=CascadeType.ALL)
+Contact contact;
+
+
+public Contact getContact() {
+	return contact;
+}
+public void setContact(Contact contact) {
+	this.contact = contact;
+}
 public Integer getEno() {
 	return eno;
 }

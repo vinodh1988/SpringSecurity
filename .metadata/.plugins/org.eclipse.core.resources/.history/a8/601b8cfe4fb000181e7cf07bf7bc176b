@@ -1,0 +1,14 @@
+package com.relations.model;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="trainer")
+public class Trainer{
+@Id
+  private int trainer_id;
+@Column
+  private String name;
+  
+}
