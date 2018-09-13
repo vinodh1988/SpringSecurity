@@ -11,12 +11,18 @@
   <property name="show_sql">true</property>
   <mapping resource="com/model/Jobs.hbm.xml"/>
   <mapping class="com.model.Jobs1"/>
-  
   <mapping class="com.relations.model.Dept"/>
   <mapping class="com.relations.model.Employee"/>
   <mapping class="com.relations.model.Contact"/>
   <mapping class="com.relations.model.Course"/>
   <mapping class="com.relations.model.Trainer"/>
-  
+  <mapping class="com.inheritance.model.UGStudent"/>
+  <mapping class="com.inheritance.model.Student"/>
+  <mapping class="com.inheritance.model.PGStudent"/>
+  <mapping class="com.inheritance.model.Player"/>
+  <mapping class="com.inheritance.model.OdiPlayer"/>
+  <mapping class="com.inheritance.model.TestPlayer"/>
+   <mapping class="com.inheritance.model.Employee"/>
+    <mapping class="com.inheritance.model.RegularEmployee"/>
  </session-factory>
 </hibernate-configuration>

@@ -1,0 +1,20 @@
+package com.runner;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+
+import com.inheritance.model.TestPlayer;
+import com.model.SessionProvider;
+
+public class Runner6 {
+	public static void main(String n[]){
+		  SessionFactory sf=SessionProvider.getSessionFactory();
+		  Session s1=sf.openSession();
+		  Transaction t=s1.beginTransaction();
+		  
+		
+		  t.commit();
+		  
+	  }
+}

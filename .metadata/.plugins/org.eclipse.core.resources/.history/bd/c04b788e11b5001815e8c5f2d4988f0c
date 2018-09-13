@@ -1,0 +1,27 @@
+package com.runner;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+
+import com.inheritance.model.Employee;
+import com.model.SessionProvider;
+
+public class Runner6 {
+	public static void main(String n[]){
+		  SessionFactory sf=SessionProvider.getSessionFactory();
+		  Session s1=sf.openSession();
+		  Transaction t=s1.beginTransaction();
+		  Employee e=new Employee();
+		  e.setEid(11);
+		  e.setName("Jagan");
+		  
+		/*  RegularEmployee r=new RegularEmployee();
+		  r.setEid(10);
+		  r.setName("Pradeep");
+		  r.setDesig("Programmer");*/
+		  s1.save(e);
+		  t.commit();
+		  
+	  }
+}

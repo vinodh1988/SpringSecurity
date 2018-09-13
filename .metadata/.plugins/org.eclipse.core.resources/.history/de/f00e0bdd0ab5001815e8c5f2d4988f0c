@@ -1,0 +1,14 @@
+package com.runner;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
+import com.model.SessionProvider;
+
+public class Runner5 {
+  public static void main(String n[]){
+	  SessionFactory sf=SessionProvider.getSessionFactory();
+	  Session s1=sf.openSession();
+	  Transaction t=s1.beginTransaction();
+  }
+}

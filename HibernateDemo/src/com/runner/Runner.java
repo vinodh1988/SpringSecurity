@@ -30,9 +30,16 @@ public class Runner {
 		
 		System.out.println("Row Updated");*/
 		
-		Query q=s1.createQuery("from Jobs1 where min_salary>7000 order by job_title");
+		Query q=s1.createQuery("from Jobs1");
 		
 		List<Jobs1> l=q.list();
+		
+		for(Jobs1 x:l)
+			System.out.println(x.getJob_title());
+		
+        q=s1.createQuery("from Jobs1");
+		
+		l=q.list();
 		
 		for(Jobs1 x:l)
 			System.out.println(x.getJob_title());

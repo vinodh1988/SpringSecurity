@@ -1,0 +1,22 @@
+package com.runner;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+
+import com.inheritance.model.UGStudent;
+import com.model.SessionProvider;
+
+public class Runner4 {
+  public static void main(String n[]){
+	  SessionFactory s=SessionProvider.getSessionFactory();
+		Session s1=s.openSession();
+		
+		Transaction t=s1.beginTransaction();
+		
+		UGStudent ug=new UGStudent(2,"Balaji",84.22,"ECE");
+		s1.save(ug);
+		t.commit();
+		System.out.println("row inserted");
+  }
+}
