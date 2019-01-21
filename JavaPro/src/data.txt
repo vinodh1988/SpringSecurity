@@ -1,0 +1,156 @@
+1.
+Oracle Database 12c: RAC Administration Ed 1
+2. 
+5 Days
+3.
+This Oracle Database 12c: RAC Administration training will teach you about Oracle RAC database architecture.Expert Oracle University instructors will deep dive into Global Resources and Cache Fusion.
+4.
+Administer ASM files, directories, templates, and disk groups. Manage Install Oracle RAC software. Create cluster databases.
+Administer both administrator and policy-managed Oracle RAC databases.
+Monitor and address performance issues.
+Learn about services in a RAC environment as well as highly available connection features including Application Continuity and Transaction Guard. Create and administer a RAC One Node Database.
+Create and manage multitennant RAC databases.
+5.
+Ensure fast, reliable, secure and easy to manage performance. Optimize database workloads, lower IT costs and deliver a higher quality of service by enabling consolidation onto database clouds.
+6.
+Administrator
+Database Administrators
+7.
+Modify initialization parameters in a RAC environment
+Perform post-database-creation tasks
+Configure RMAN for the RAC environment
+Describe the benefits of Oracle RAC
+Explain the necessity of global resources
+Configure the RAC database to use ARCHIVELOG mode and the fast recovery area
+Convert a single-instance Oracle Database to RACs
+Create a cluster database a in an understanding of the Oracle Database
+Define redo log files in a RAC environment
+Define undo tablespaces in a RAC environment
+Describe global cache coordination
+Describe how Grid Plug and Play affects Clusterware
+Describe the Oracle Clusterware architecture
+Explain the principles and purposes of clusters
+Install the Oracle Database software
+8.
+$Overview of Oracle Architecture
+$Oracle ASM Instance Administration
+ASM Instance Administration
+Instance Parameters
+ASM_DISKGROUPS
+Adjusting ASM Instance Parameters in SPFILEs
+Instance Startup and Shutdown
+Relevant V$Views
+$Administering ASM Disk Groups
+ASM Disk Group Overview
+Disk Group Attributes
+Compatibility Attributes
+Disk Group Management
+Disk Group Metadata
+Viewing Connected Clients
+Disk Group Rebalance
+ASM Fast Mirror Resync
+$Administering ASM Files, Directories, and Templates
+Interaction Between Database Instances and ASM
+Accessing ASM Files
+Fully Qualified ASM File Names
+ASM File Creation
+View ASM Aliases, Files, and Directories
+ASM Directories Overview
+Managing ASM Directories
+Managing Alias File Names
+$Grid Infrastructure Overview and Review
+What is a Cluster?
+What is a Flex Cluster
+Clusterware Characteristics
+Oracle Clusterware
+Hardware and Software Concepts (High level)
+$RAC Databases Overview & Architecture
+Overview of Oracle RAC
+RAC One Node
+Cluster-Aware Storage Solutions
+Benefits of Using RAC
+Scaleup and Speedup
+I/O Throughput Balanced
+Global Resources
+RAC and Flex ASM
+$Installing and Configuring Oracle RAC
+Installing the Oracle Database Software
+Installation options
+Creating the Cluster Database
+Post-installation Tasks
+Single Instance to RAC Conversion
+Cleaning Up Unsuccessful Installs
+$Oracle RAC Administration
+Parameters and RAC - SPFILE, Identical and Unique Parameters
+Instance Startup, Shutdown and Quiesce
+Undo Tablespaces
+Redo Threads
+Use Enterprise Manager Cluster Database Pages
+RAC Alerts
+RAC Metrics
+$Managing Backup and Recovery for RAC
+Overview of Upgrades and Patching Release and Patch Set
+Upgrades PSU, CPU and Interim Patches Merge Patches
+Performing Out Of Place Database Upgrades Planning and Preparing for
+Upgrade
+Performing Out of Place Release Install or Upgrade Post Upgrade Tasks
+$RAC Backup and Recovery
+Instance Failure And Recovery In RAC - LMON and SMON Redo Threads and Archive
+Log Configurations and Admin Parameter Settings Affecting Parallel Recovery and
+MTTR Instance Failure And Recovery In RAC - LMON and SMON RAC and the Fast
+Recovery Area
+RMAN Configuration
+RMAN Admin For RAC: Channels, Instances, Backup Distribution RMAN Restore And Recovery RAC Considerations
+$RAC Global Resource Management and Cache Fusion
+Globally Managed Resources and Management
+Library Cache Management
+Row cache management
+Buffer cache fusion
+Buffer Cache Management Requirements
+Accessing single blocks in RAC
+Multi-block read considerations in RAC
+Undo and read consistency considerations in RAC
+$RAC Database Monitoring and Tuning
+OCPU and Wait Time Latencies
+Wait Events for RAC
+Common RAC Tuning
+Session and System Statistics
+RAC specific V$ Views
+Automatic Database Diagnostic Monitor for RAC
+$Managing High Availability of Services in a RAC Environment Oracle Services
+Services for Policy - and Administrator-Managed Databases Creating
+Services
+Managing Services
+Use Services with Client Applications Services and Connection Load Balancing Services and Transparent Application Failover Services and the Resource Manager
+$Managing High Availability of Connections 
+Types of Workload Distribution Client-Side Load Balancing Server-Side Load Balancing
+Runtime Connection Load Balancing and Connection Pools
+Fast Application Notification
+The Load Balancing Advisory FAN Event
+Server-Side Callouts
+Configuring the Server-Side ONS
+$Application Continuity
+What is AC?
+What problem does it solve?
+Benefits of AC
+How AC works
+AC Architecture
+Side Effects
+Restrictions
+Application requirements
+$RAC One Node
+RAC One Node Concepts Online database migration
+Adding Oracle RAC One Node Database to an Existing Cluster Convert an Oracle RAC One Node database to a RAC database Convert an Oracle RAC database to a RAC One Node database
+Use DBCA to convert a single instance database to a RAC One Node database
+$Multitenant Architecture and RAC
+Non-CDB Architecture
+Multitenant Architecture: Benefits
+CDB in a Non-RAC EnvironmentContainers
+Terminology and Data Dictionary Views
+Connection to a Non-RAC CDB
+Oracle RAC and Multitenant Configuration
+Oracle RAC and Multitenant Architecture
+$Quality of Service Management
+QOS Management concepts
+Describe the benefits of using QoS Management QoS Management components 
+QoS Management functionality

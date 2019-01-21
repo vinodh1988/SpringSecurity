@@ -1,0 +1,5 @@
+com\rest\dao\PersonDAO.class
+com\rest\control\MyApi.class
+com\rest\entity\Person.class
+com\rest\home\SpringMainClass.class
+com\rest\services\DataService.class

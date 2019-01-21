@@ -1,2 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<aop-reference-model/>
+<aop-reference-model>
+<aop-project name="isqlglobal"/>
+<aop-project name="demo"/>
+<aop-project name="my-first-boot-app"/>
+<aop-project name="SprintRestService"/>
+<aop-project name="my-app-broker"/>
+<aop-project name="SpringSecurityDemo"/>
+<aop-project name="rest-api-service"/>
+<aop-project name="SpringMVC"/>
+<aop-project name="SpringIOC">
+<aspect-definition advice-class-name="com.ioc.aspect.MyAspect" advice-method-name="exe" advice-type="AFTER" aspect-end-line-number="36" aspect-name="myAspect" aspect-start-line-number="36" factory-id="org.springframework.ide.eclipse.aop.core.annotationAspectDefinitionElementFactory" file="/SpringIOC/src/bean.xml" pointcut-expression="dummy()" proxy-target-class="false">
+<aop-reference advice-type="AFTER" bean="1:BeansModel|2:SpringIOC|3:src/bean.xml|7:beans:32|8:cdesign:41" bean-file="/SpringIOC/src/bean.xml" bean-start-line="41" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/SpringIOC/src/bean.xml" source="=SpringIOC/src&lt;com.ioc.aspect{MyAspect.java[MyAspect~exe" source-start-line="26" target="=SpringIOC/src&lt;com.ioc.system{CircuitDesign.java[CircuitDesign~designProduct" target-start-line="6"/>
+</aspect-definition>
+<aspect-definition advice-class-name="com.ioc.aspect.MyAspect" advice-method-name="execute" advice-type="BEFORE" aspect-end-line-number="36" aspect-name="myAspect" aspect-start-line-number="36" factory-id="org.springframework.ide.eclipse.aop.core.annotationAspectDefinitionElementFactory" file="/SpringIOC/src/bean.xml" pointcut-expression="dummy()" proxy-target-class="false">
+<aop-reference advice-type="BEFORE" bean="1:BeansModel|2:SpringIOC|3:src/bean.xml|7:beans:32|8:cdesign:41" bean-file="/SpringIOC/src/bean.xml" bean-start-line="41" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/SpringIOC/src/bean.xml" source="=SpringIOC/src&lt;com.ioc.aspect{MyAspect.java[MyAspect~execute" source-start-line="20" target="=SpringIOC/src&lt;com.ioc.system{CircuitDesign.java[CircuitDesign~designProduct" target-start-line="6"/>
+</aspect-definition>
+</aop-project>
+</aop-reference-model>
